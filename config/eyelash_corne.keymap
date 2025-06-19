@@ -84,10 +84,10 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T                                &msc SCRL_UP                     &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp ESCAPE      &kp A  &kp S  &kp D         &kp F         &kp G                &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B  &kp K_MUTE                    &msc SCRL_DOWN                   &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                              &kp LEFT_ALT  &kp LEFT_GUI  &mo 1                                                                 &mo 2  &kp SPACE  &kp LCTRL
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                                       &msc SCRL_UP                     &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp ESCAPE      &kp A  &kp S  &kp D         &kp F  &kp G                       &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B         &kp K_MUTE                    &msc SCRL_DOWN                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                              &kp LEFT_ALT  &mo 1  &kp LEFT_GUI                                                                 &kp SPACE  &mo 2  &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -96,10 +96,10 @@
         lower_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp TILDE     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                                              &mmv MOVE_UP                     &kp LCTRL      &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&kp TILDE     &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                                              &mmv MOVE_UP                     &kp CARET      &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
 &none         &none            &none        &none     &none       &kp HOME                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL             &kp UNDERSCORE         &kp PIPE
 &kp CAPSLOCK  &none            &none        &none     &none       &kp END      &kp C_BRIGHTNESS_MAXIMUM                    &mmv MOVE_DOWN                   &kp PAGE_DOWN  &kp LEFT          &kp DOWN_ARROW     &kp UP_ARROW          &kp RIGHT              &ffSelectFirstUrlSuggestion
-                                            &trans    &trans      &trans                                                                                    &mo 3          &ffSearchTabs     &trans
+                                            &trans    &trans      &trans                                                                                    &ffSearchTabs  &mo 3             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -111,7 +111,7 @@
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp N7          &kp N8           &kp N9    &kp N0     &none
 &kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS  &kp MINUS  &kp BACKSLASH
 &kp F7     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12  &none                    &mmv MOVE_DOWN                   &none         &none           &none            &none     &none      &kp ENTER
-                                       &trans        &trans        &mo 3                                                              &none         &trans          &trans
+                                       &trans        &mo 3         &none                                                              &none         &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
