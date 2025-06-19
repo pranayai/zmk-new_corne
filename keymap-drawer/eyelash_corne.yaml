@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
   - SYMBOL
-  - NUIMBER
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:keyboard-space$$
+  - NUIMBER
   - $$mdi:apple-keyboard-control$$
   SYMBOL:
   - '~'
@@ -57,7 +57,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:apple-keyboard-control$$
+  - ^
   - '&'
   - '*'
   - (
@@ -93,10 +93,10 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '&ffSelectFirstUrlSuggestion'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - Fn
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&ffSearchTabs'
+  - Fn
   - {t: '$$mdi:transfer$$', type: trans}
   NUIMBER:
   - {t: '`', s: '~'}
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - Fn
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -191,8 +191,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
