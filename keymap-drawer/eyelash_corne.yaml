@@ -91,12 +91,12 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '&ffSelectFirstUrlSuggestion'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - Fn
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&ffSearchTabs'
   - {t: '$$mdi:transfer$$', type: trans}
   NUIMBER:
   - {t: '`', s: '~'}
