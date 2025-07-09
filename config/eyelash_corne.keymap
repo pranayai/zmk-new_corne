@@ -97,7 +97,7 @@
             display-name = "SYMBOL";
             bindings = <
 &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                                              &mmv MOVE_UP                     &kp CARET      &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
-&none           &none            &none        &none     &none       &kp HOME                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL             &kp UNDERSCORE         &kp PIPE
+&none           &none            &none        &none     &none       &kp HOME                                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS              &kp MINUS              &kp PIPE
 &kp LEFT_SHIFT  &none            &none        &none     &none       &kp END      &kp C_BRIGHTNESS_MAXIMUM                    &mmv MOVE_DOWN                   &kp PAGE_DOWN  &kp LEFT          &kp DOWN_ARROW     &kp UP_ARROW          &kp RIGHT              &ffSelectFirstUrlSuggestion
                                               &trans    &trans      &trans                                                                                    &ffSearchTabs  &mo 3             &kp CAPSLOCK
             >;
@@ -108,9 +108,9 @@
         raise_layer {
             display-name = "NUIMBER";
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp N7          &kp N8           &kp N9    &kp N0     &none
-&kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS  &kp MINUS  &kp BACKSLASH
-&kp F7     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12  &none                    &mmv MOVE_DOWN                   &none         &none           &none            &none     &none      &kp ENTER
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                            &mmv MOVE_UP                     &kp NUMBER_6  &kp N7          &kp N8           &kp N9     &kp N0     &none
+&kp F1     &kp F2        &kp F3        &kp F4        &kp F5        &kp F6            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL  &kp UNDER  &kp BACKSLASH
+&kp F7     &kp F8        &kp F9        &kp F10       &kp F11       &kp F12  &none                    &mmv MOVE_DOWN                   &none         &none           &none            &none      &none      &kp ENTER
                                        &trans        &mo 3         &none                                                              &none         &trans          &trans
             >;
 
@@ -120,13 +120,22 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&bt BT_SEL 0  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &none   &none   &none                            &mmv MOVE_UP                     &none   &bl BL_TOG  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE  &none
-&bt BT_SEL 1  &none            &none            &none   &none   &none            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none       &none       &none       &none         &none
-&bt BT_SEL 2  &none            &none            &none   &none   &none   &none                    &mmv MOVE_DOWN                   &none   &none       &none       &none       &none         &none
-                                                &trans  &trans  &trans                                                            &trans  &trans      &trans
+&bt BT_SEL 0  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_EFF  &none   &none                            &mmv MOVE_UP                     &none   &bl BL_TOG  &bl BL_INC  &bl BL_DEC  &bl BL_CYCLE  &none
+&bt BT_SEL 1  &none            &none            &none            &none   &none            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none       &none       &none       &none         &none
+&bt BT_SEL 2  &none            &none            &none            &none   &none   &none                    &mmv MOVE_DOWN                   &none   &none       &none       &none       &none         &none
+                                                &trans           &trans  &trans                                                            &trans  &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
